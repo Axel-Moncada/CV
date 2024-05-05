@@ -10,7 +10,7 @@ function Header () {
         <div>
       <Navbaraxel />,
       <Heroseccion />,
-      <Aboutme />
+      <Aboutme/>
       </div>
   )
 }

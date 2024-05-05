@@ -5,7 +5,7 @@ import {Button, ButtonGroup} from "@nextui-org/button";
 
 function Heroseccion () {
     return(
-        <div className="bg-white">
+        <div className="">
          <div className="relative isolate px-6 pt-14 lg:px-8">
             <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-1">
            
@@ -21,7 +21,7 @@ function Heroseccion () {
               </h1>
               
               <p className="mt-6 text-lg leading-8 text-gray-600 font-regular ">
-                Diseñador y desarrollador web, me especializo en diseñar graficamente y desarrollar paginas web creativas.
+              👨🏻‍💻Desarrollador y diseñador web - 💻Ingeniero de software <br></br> ✔FrontEnd developer - 🖌UX/UI 
               </p>
 
               <div className='mt-10  flex space-x-20 justify-center'>

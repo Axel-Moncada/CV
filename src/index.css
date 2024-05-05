@@ -25,5 +25,20 @@
 }
 
 .iconwhite {
-  fill:white
+  fill: #11181C;
 }
+
+body {
+  background-image: url(./assets/bg.png);
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.linkedin:hover {
+  fill: #0A66C2;
+}
+
+
+
