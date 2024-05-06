@@ -1,4 +1,4 @@
-import papanoel from './assets/papanoel.gif';
+import papanoel from './assets/papanoel.webm';
 import imgvideo1 from './assets/videoestatico1.png'
 import imgvideo2 from './assets/videoestatico2.png'
 import tesorosOcultos from './assets/tesorosOcultos.gif'
