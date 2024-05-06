@@ -41,4 +41,25 @@ body {
 }
 
 
+.col-span-2.hovered {
+  width: 100%;
+  transition: width 0.5s ease;
+  background-color: #11181C;
+}
+
+.tecnologia-icono {
+  
+  width: 30px;
+  height: auto;
+}
+
+.tecnologia-icono-grande {
+  width: 20px;
+  height: auto;
+}
+
+.tecnologia-icono-small {
+  width: 90px;
+  height: 100px;
+}
 
