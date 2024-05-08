@@ -12,10 +12,10 @@ function Proyectos() {
     return (
         <div className="container mx-auto w-7/12 ">
             <div className="" style={{ alignContent: 'stretch' }}>
-
+                <h1 className="text-left text-4xl font-bold mb-5">Proyectos principales</h1>
 
                 {dataproyectos.map((proyecto, index) => (
-                    <div key={proyecto.id} className={`grid grid-cols-6 gap-8 p-10 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}
+                    <div key={index} className={`grid grid-cols-6 gap-8 p-10 ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
                     >
@@ -28,7 +28,13 @@ function Proyectos() {
                                     <div className="flex iconwhite gap-4 mt-10">
                                         {Object.entries(proyecto.tecnologias).map(([tecnologia, ruta]) => (
                                             <Tooltip showArrow={true} color={"primary"} content={tecnologia}>
-                                                <img key={tecnologia} src={ruta} alt={tecnologia} width={tamano} className="tecnologia-icono" />
+                                                <img key={tecnologia} src={ruta} alt={tecnologia}
+                                                    className={`
+                                        tecnologia-icono 
+                                        ${tecnologia === 'FIGMA' ? 'tecnologia-icono-grande' : ''} ,
+                                        ${tecnologia === 'PHP' ? 'tecnologia-icono-small' : ''} ,
+                                        ${tecnologia === 'MYSQL' ? 'tecnologia-icono-small' : ''} ,
+                                        ${tecnologia === 'BOOTSTRAP' ? 'tecnologia-icono-boots' : ''}`} />
                                             </Tooltip>
                                         ))}
 
@@ -37,14 +43,31 @@ function Proyectos() {
                                 </div>
                                 <div className="col-span-2">
                                     <Card
+                                        className="py-2 px-2 bg-white/10 text-zinc-1000 h-96 self-center hover:-translate-y-1 hover:scale-102 duration-600"
                                         style={{
-                                            backgroundImage: `url(${hoveredIndex === index ? proyecto.video : proyecto.img})`,
+                                            backgroundImage: `url(${proyecto.img})`,
                                             backgroundSize: 'cover',
                                             backgroundPosition: 'center',
                                             width: '100%',
-                                            height: '400px'
+                                            padding: '0px',
+                                            height: '400px',
+                                            overflow: 'hidden'
                                         }}
-                                        className="py-2 px-2 bg-white/10 text-zinc-1000 h-96 self-center  hover:-translate-y-1 hover:scale-102  duration-600">
+                                    >
+                                        {hoveredIndex === index && proyecto.video && (
+                                            <video
+                                                autoPlay
+                                                loop
+                                                muted
+                                                style={{
+                                                    position: 'absolute',
+                                                    width: '100%',
+                                                    height: '100%',
+                                                    objectFit: 'cover'
+                                                }}
+                                            >
+                                                <source src={proyecto.video} type="video/webm" />{ }</video>
+                                        )}
                                     </Card>
                                 </div>
                             </>
@@ -52,14 +75,31 @@ function Proyectos() {
                             <>
                                 <div className="col-span-2 self-center">
                                     <Card
+                                        className="py-2 px-2 bg-white/10 text-zinc-1000 h-96 self-center hover:-translate-y-1 hover:scale-102 duration-600"
                                         style={{
-                                            backgroundImage: `url(${hoveredIndex === index ? proyecto.video : proyecto.img})`,
+                                            backgroundImage: `url(${proyecto.img})`,
                                             backgroundSize: 'cover',
                                             backgroundPosition: 'center',
                                             width: '100%',
-                                            height: '400px'
+                                            padding: '0px',
+                                            height: '400px',
+                                            overflow: 'hidden'
                                         }}
-                                        className="py-2 px-2 bg-white/10 text-zinc-1000 h-96 self-center  hover:-translate-y-1 hover:scale-102  duration-600">
+                                    >
+                                        {hoveredIndex === index && proyecto.video && (
+                                            <video
+                                                autoPlay
+                                                loop
+                                                muted
+                                                style={{
+                                                    position: 'absolute',
+                                                    width: '100%',
+                                                    height: '100%',
+                                                    objectFit: 'cover'
+                                                }}
+                                            >
+                                                <source src={proyecto.video} type="video/webm" />{ }</video>
+                                        )}
                                     </Card>
                                 </div>
                                 <div className="col-span-4 py-8 px-8">
@@ -69,11 +109,13 @@ function Proyectos() {
                                     <div className="flex iconwhite gap-4 mt-10">
                                         {Object.entries(proyecto.tecnologias).map(([tecnologia, ruta]) => (
                                             <Tooltip showArrow={true} color={"primary"} content={tecnologia}>
-                                                <img key={tecnologia} src={ruta} alt={tecnologia} 
+                                                <img key={tecnologia} src={ruta} alt={tecnologia}
                                                     className={`
-                                            tecnologia-icono 
-                                            ${tecnologia === 'FIGMA' ? 'tecnologia-icono-grande' : ''} 
-                                            ${tecnologia === 'PHP' ? 'tecnologia-icono-small' : ''}`} />
+                                        tecnologia-icono 
+                                        ${tecnologia === 'FIGMA' ? 'tecnologia-icono-grande' : ''} ,
+                                        ${(tecnologia === 'PHP')|| (tecnologia ===  'NODE_JS') ? 'tecnologia-icono-small' : ''} ,
+                                        ${tecnologia === 'MYSQL' ? 'tecnologia-icono-small' : ''} ,
+                                        ${tecnologia === 'BOOTSTRAP' ? 'tecnologia-icono-boots' : ''}`} />
                                             </Tooltip>
                                         ))}
 

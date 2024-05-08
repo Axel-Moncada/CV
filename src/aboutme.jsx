@@ -30,7 +30,7 @@ function Aboutme() {
                             <h1 className="text-4xl font-bold mb-7">¿Desarrollador o diseñador?  </h1>
                             <p className="pr-20 text-lg"> Las dos, apasionado del  <b>diseño gráfico y la programación de software</b>. Inicié mi trayectoria estudiando Comunicación Publicitaria, donde adquirí habilidades en diseño gráfico, tendencias publicitarias y marketing digital. Después, por hobby, descubrí la programación y fusioné mis habilidades para convertirme en un diseñador y desarrollador Front-end desde hace mas de <b>5 años.</b> Manejo la suite Adobe y herramientas de UI/UX como Figma, junto con habilidades sólidas en desarrollo de código, especializándome en lenguajes de programación del lado del Front-end.</p>
                             <br />
-                           
+
                         </CardHeader>
                         <CardBody className="overflow-visible py-2">
 

@@ -1,19 +1,25 @@
 import papanoel from './assets/papanoel.webm';
 import imgvideo1 from './assets/videoestatico1.png'
 import imgvideo2 from './assets/videoestatico2.png'
-import tesorosOcultos from './assets/tesorosOcultos.gif'
+import imgvideo3 from './assets/videoestatico3.png'
+import imgvideo4 from './assets/videoestatico4.png'
+import tesorosOcultos from './assets/tesorosOcultos.webm'
+import americadecali from './assets/americadecali.webm'
+import heywallet from './assets/heywallet.webm'
 import logoreact from "./logos/React-b.svg"
-import logoangular from "./logos/Angular-b.svg"
+
 import BOOTSTRAP from "./logos/Bootstrap-b.svg"
-import logonode from "./logos/Node-b.svg"
+
 import logotailwind from "./logos/Tailwind-b.svg"
 import HTML from "./logos/HTML5-B.svg"
 import CSS from "./logos/css-b.svg"
 import JS from "./logos/JS-B.svg"
 import FIGMA from "./logos/FIGMA-B-2.svg"
 import ANGULAR from "./logos/Angular-b.svg"
+import NODE_JS from "./logos/Node-b.svg"
 import PHP from "./logos/PHP-B.svg"
 import MYSQL from "./logos/MYSQLSVG-b.svg"
+import MONGO_DB from "./logos/mongodb-b.svg"
 
 const dataproyectos = [
     {
@@ -51,15 +57,31 @@ const dataproyectos = [
         id: 3,
         company: "América de cali / 2021",
         title: "Sistema de ingreso al Pascual guerrero",
-        description: "El equipo colombiano de futbol América de cali poseía un gran problema y es que todos los empleados podían entrar gratis al estadio, generando un sin fin de problemas, para solucionar dicho inconveniente desarrolle un sistema de carga y visualización de los trabajadores actuales de la plantilla, con el fin de que gestión humana para cada partido subiera un Excel con toda la lista de empleados autorizados para ingresar y el día del partido las personas de seguridad ingresaban a la página y verificaban si podían acceder al estadio o no. ",
-        video: tesorosOcultos,
-        img: imgvideo2,
+        description: "El equipo colombiano de futbol América de cali poseía un gran problema y es que todos los empleados podían entrar gratis al estadio, generando un sin fin de inconvenientes logisticos, para solucionar dicho inconveniente desarrolle un sistema de carga y visualización de los trabajadores actuales de la plantilla, con el fin de que gestión humana para cada partido subiera un Excel con toda la lista de empleados autorizados para ingresar y el día del partido las personas de seguridad ingresaban a la página y verificaban si podían acceder al estadio o no. ",
+        video: americadecali,
+        img: imgvideo3,
         tecnologias: {
             HTML,
             CSS,
             JS,
             PHP,
             MYSQL
+        },
+    },
+    {
+        id: 4,
+        company: "U. Iberoamericana / 2020",
+        title: "HeyWallet",
+        description: "El proyecto final de mi certificación Full Stack en la Universidad Iberoamericana fue HeyWallet, una billetera digital desarrollada con Angular, Bootstrap, Node.js, MongoDB y JavaScript (MEAN). HeyWallet permitía a los usuarios gestionar gastos, ahorros e inversiones, con un proceso de activación de cuenta por correo electrónico para garantizar la seguridad. Este proyecto demostró mi capacidad para crear aplicaciones web funcionales y seguras para el control financiero personal. ",
+        video: heywallet,
+        img: imgvideo4,
+        tecnologias: {
+            HTML,
+            CSS,
+            JS,
+            ANGULAR,
+            NODE_JS,
+            MONGO_DB
         },
     },
 ];
