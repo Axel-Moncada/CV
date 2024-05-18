@@ -19,14 +19,9 @@
 
 }
 
-.btn-blanco:hover {
-  background-color: #1a1a1a !important;
-  color: white;
-}
 
-.iconwhite {
-  fill: #11181C !important;
-}
+
+
 
 body {
   background-image: url(./assets/bg.png);
@@ -70,4 +65,11 @@ body {
   height: 38px;
   fill: #11181C !important;
 }
+
+
+
+
+  
+
+
 

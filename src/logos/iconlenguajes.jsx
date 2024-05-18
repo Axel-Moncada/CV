@@ -15,13 +15,14 @@ import mysql from "./MYSQLSVG-b.svg"
 import MONGO_DB from "./mongodb-b.svg"
 
 
-function Iconlenguajes() {
+function Iconlenguajes({theme}) {
+    const fillColor = theme === 'dark' ? 'white' : 'black';
     return (
 
         <div className="flex iconwhite gap-4 mt-2 iconwhite">
 
             <Tooltip showArrow={true}  color={"primary"} content="HTML5">
-               <img src={html} alt="html logo" width={30}/>
+               <img src={html} alt="html logo" width={30} fill={fillColor} />
             </Tooltip>
 
 

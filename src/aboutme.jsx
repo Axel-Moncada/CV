@@ -8,7 +8,7 @@ import Iconoframework from "./logos/iconframework";
 
 
 
-function Aboutme() {
+function Aboutme({ theme }) {
 
     return (
 
@@ -24,7 +24,7 @@ function Aboutme() {
                             <div className="justify-between flex w-full">
                                 <h3 className="text-xl">Bienvenidos, 👋🏼</h3>
                                 <div>
-                                    <Socialicons />
+                                    <Socialicons theme={theme}/>
                                 </div>
                             </div>
                             <h1 className="text-4xl font-bold mb-7">¿Desarrollador o diseñador?  </h1>
@@ -47,11 +47,11 @@ function Aboutme() {
                         </CardHeader>
                         <CardBody className="overflow-visible py-2">
                             <h4 className="font-bold text-large mb-4">Diseño
-                                <Disenoicons /> </h4>
+                                <Disenoicons theme={theme} /> </h4>
                             <h4 className="font-bold text-large mb-4">Programación
-                                <Iconlenguajes /></h4>
+                                <Iconlenguajes theme={theme} /></h4>
                             <h4 className="font-bold text-large mb-4" >Frameworks
-                                <Iconoframework /></h4>
+                                <Iconoframework theme={theme} /></h4>
                         </CardBody>
                     </Card>
                 </div>

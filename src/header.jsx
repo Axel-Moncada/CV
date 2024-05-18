@@ -6,12 +6,12 @@ import Heroseccion from "./heroseccion.jsx";
 import Aboutme from "./aboutme.jsx";
 
 
-function Header () {
+function Header ({ theme }) {
     return(
-        <div>
+        <div className=" dark:bg-neutral-900">
       <Navbaraxel />,
       <Heroseccion />,
-      <Aboutme/>,
+      <Aboutme theme={ theme }/>,
       
 
       </div>
