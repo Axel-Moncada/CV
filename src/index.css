@@ -24,12 +24,19 @@
 
 
 body {
-  background-image: url(./assets/bg.png);
-  background-size:auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
 }
+
+.background{ 
+
+  position: fixed;
+  right: -280px;
+  bottom: -300px;
+  z-index: -999;  
+  opacity: 0.5;
+ 
+}
+
+
 
 .linkedin:hover {
   fill: #0A66C2;

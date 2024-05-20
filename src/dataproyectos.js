@@ -20,6 +20,7 @@ import NODE_JS from "./logos/Node-b.svg"
 import PHP from "./logos/PHP-B.svg"
 import MYSQL from "./logos/MYSQLSVG-b.svg"
 import MONGO_DB from "./logos/mongodb-b.svg"
+import logos from "./logos/logossvg"
 
 const dataproyectos = [
     {
