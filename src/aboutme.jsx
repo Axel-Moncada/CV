@@ -18,8 +18,7 @@ function Aboutme() {
 
                 <div className=" col-span-2">
 
-                    <Card className="py-8 px-8 bg-white/10 text-zinc-1000 min-h-80  hover:-translate-y-1 hover:scale-102  duration-600" isBlurred
-                        shadow="md">
+                    <Card className="py-8 px-8 bg-white/10 text-zinc-1000 h-full  hover:-translate-y-1 hover:scale-102  duration-600 glass">
                         <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                             <div className="justify-between flex w-full">
                                 <h3 className="text-xl">Bienvenidos, 👋🏼</h3>
@@ -39,11 +38,9 @@ function Aboutme() {
                 </div>
 
                 <div className="col-span-1">
-                    <Card className="py-4 px-10 bg-white/10 text-zinc-1000 h-full self-center  hover:-translate-y-1 hover:scale-102  duration-600">
+                    <Card className="py-4 px-10 bg-white/10 text-zinc-1000 h-full self-center  hover:-translate-y-1 hover:scale-102  duration-600 glass">
                         <CardHeader className=" flex-col items-start mb-3">
                             <p className="text-4xl font-bold">Herramientas</p>
-
-
                         </CardHeader>
                         <CardBody className="overflow-visible py-2">
                             <h4 className="font-bold text-large mb-4">Diseño

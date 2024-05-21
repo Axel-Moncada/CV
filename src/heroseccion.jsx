@@ -6,6 +6,7 @@ import { SunIcon } from "./assets/SunIcon";
 import emoji from './assets/Axel-emoji.png'
 import { ThemeContext } from "./contexts/themecontexts";
 import bg from "./assets/bg-2.png"
+import bg3 from "./assets/bg-3.png"
 
 
 
@@ -18,24 +19,39 @@ function Heroseccion() {
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-1">
 
-          <Switch
-            defaultSelected={theme === "dark"}
-            size="lg"
-            color="success"
-            startContent={<SunIcon />}
-            endContent={<MoonIcon />}
-            onClick={toggleTheme}
-          >
-            Dark mode
-          </Switch>
+          <div className="mode">
+            <Switch
+              defaultSelected={theme === "dark"}
+              size="lg"
+              color="secondary"
+              startContent={<SunIcon />}
+              endContent={<MoonIcon />}
+              onClick={toggleTheme}
+            >
+
+            </Switch>
+          </div>
+
+
 
           {theme === "dark" && (
-                <div className="background">
-                    <img src={bg} alt="" width="100%" />
-                </div>
-            )}
+            <div className="background">
+              <img src={bg} alt="" width="100%" />
+              <img src={bg3} alt="" width="100%" id="bg3" />
+            </div>
+          )}
           <div>
+
             <div>
+              <div className='justify-item-center'>
+                <Switch
+                  defaultSelected={theme === "dark"}
+                  size="lg"
+                  color="secondary"
+                >
+                  Modo Creativo
+                </Switch>
+              </div>
               <img className='w-80 mx-auto' src={emoji} alt="" />
             </div>
           </div>

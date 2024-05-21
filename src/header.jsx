@@ -9,9 +9,9 @@ import Aboutme from "./aboutme.jsx";
 function Header () {
     return(
         <div>
-      <Navbaraxel />,
-      <Heroseccion />,
-      <Aboutme/>,
+      <Navbaraxel />
+      <Heroseccion />
+      <Aboutme/>
       
 
       </div>

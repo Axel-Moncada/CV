@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 
 
 // import required modules
-import { Pagination, Navigation, HashNavigation } from 'swiper/modules';
+import { Pagination, Navigation, HashNavigation, Autoplay } from 'swiper/modules';
 
 
 import dataestudios from "./dataestudios"
@@ -23,18 +23,20 @@ function Estudioscarrusel() {
                 slidesPerView={3}
                 spaceBetween={40}
                 loop={true}
-                
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 pagination={{
                     clickable: true,
                 }}
-                
-                modules={[Pagination]}
-                className="mySwiper px-20 "
+
+                modules={[Autoplay, Pagination]}
+                className="mySwiper px-20 pt-5 carrusel"
             >
                 {dataestudios.map((estudio, index) => (
                     <SwiperSlide>
-                        <Card className=" mb-12 py-8 px-8 bg-white/10 text-zinc-1000 min-h-96  hover:-translate-y-1 hover:scale-102  duration-600" isBlurred
-                            shadow="md">
+                        <Card className=" mb-12 py-8 px-8 bg-white/10 text-zinc-1000 min-h-96 glass">
                             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                                 <p className="text-2sm font-bold">{estudio.institucion}</p>
                                 <small className="text-default-500 mb-5">{estudio.fecha}</small>

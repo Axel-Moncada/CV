@@ -7,9 +7,7 @@ import tesorosOcultos from './assets/tesorosOcultos.webm'
 import americadecali from './assets/americadecali.webm'
 import heywallet from './assets/heywallet.webm'
 import logoreact from "./logos/React-b.svg"
-
 import BOOTSTRAP from "./logos/Bootstrap-b.svg"
-
 import logotailwind from "./logos/Tailwind-b.svg"
 import HTML from "./logos/HTML5-B.svg"
 import CSS from "./logos/css-b.svg"
