@@ -4,6 +4,7 @@ import Header from './header.jsx';
 import Proyectos from './proyectos.jsx';
 import Estudios from './estudios.jsx';
 import Experiencia from './experiencia.jsx';
+import Axelsection from './axelsection.jsx';
 
 
 
@@ -24,6 +25,9 @@ function App() {
       <Proyectos />
       <Estudios />
       <Experiencia/>
+      <Axelsection/>
+
+
     </div>
   )
 }

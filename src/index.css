@@ -40,6 +40,14 @@
   
 }
 
+#pattern {
+  position: absolute;
+  top: -200px;
+  z-index: -999;
+  left: 400px;
+  opacity: 0.5;
+}
+
 
 .mode{
   position: fixed;

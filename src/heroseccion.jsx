@@ -7,7 +7,7 @@ import emoji from './assets/Axel-emoji.png'
 import { ThemeContext } from "./contexts/themecontexts";
 import bg from "./assets/bg-2.png"
 import bg3 from "./assets/bg-3.png"
-
+import pattern from "./assets/pattern.png"
 
 
 
@@ -35,9 +35,15 @@ function Heroseccion() {
 
 
           {theme === "dark" && (
-            <div className="background">
-              <img src={bg} alt="" width="100%" />
-              <img src={bg3} alt="" width="100%" id="bg3" />
+            <div>
+              <div className="background">
+                <img src={bg} alt="" width="100%" />
+                <img src={bg3} alt="" width="100%" id="bg3" />
+
+              </div>
+              <div className="patter">
+                <img src={pattern} alt="" width="60%" id="pattern" />
+              </div>
             </div>
           )}
           <div>
