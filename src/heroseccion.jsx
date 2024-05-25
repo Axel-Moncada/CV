@@ -16,7 +16,7 @@ function Heroseccion() {
 
   return (
     <div>
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+      <div className="relative isolate px-6 md:pt-14">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-1">
 
           <div className="mode">
@@ -48,16 +48,7 @@ function Heroseccion() {
           )}
           <div>
 
-            <div>
-              <div className='justify-item-center'>
-                <Switch
-                  defaultSelected={theme === "dark"}
-                  size="lg"
-                  color="secondary"
-                >
-                  Modo Creativo
-                </Switch>
-              </div>
+            <div>              
               <img className='w-80 mx-auto' src={emoji} alt="" />
             </div>
           </div>
@@ -72,7 +63,7 @@ function Heroseccion() {
               👨🏻‍💻Desarrollador y diseñador web - 💻Ingeniero de software <br></br> ✔FrontEnd developer - 🖌UX/UI
             </p>
 
-            <div className='mt-10  flex space-x-20 justify-center'>
+            <div className='mt-10  flex md:space-x-20 justify-center'>
               <button className='text-xl btn-blanco dark:bg-white dark:text-gray-900 dark:hover:bg-zinc-600 dark:hover:text-white'>QUIEN SOY</button>
               <button className='text-xl btn-blanco dark:bg-white dark:text-gray-900 dark:hover:bg-zinc-600 dark:hover:text-white ' >MIS PROYECTOS</button>
             </div>

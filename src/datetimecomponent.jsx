@@ -26,8 +26,8 @@ const DateTimeComponent = () => {
 
     return (
         <div className="datetime-component text-center">            
-            <p className="text-xs capitalize text-gray-400">{dateTime.date}</p>
-            <p className="text-5xl ">{dateTime.time}</p>
+            <p className="text-lg md:text-xs capitalize text-gray-400">{dateTime.date}</p>
+            <p className=" text-7xl md:text-5xl ">{dateTime.time}</p>
         </div>
     );
 };

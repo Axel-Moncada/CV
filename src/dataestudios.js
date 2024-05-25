@@ -12,7 +12,7 @@ const dataestudios = [
         titulo: "Desarrolador FullStack",
         fecha: "2022 - 2022",
         institucion: "Corporación Universitaria Iberoamericana",
-        descripcion: "Obtuve mi certificación como desarrollador Fullstack en la Universidad Iberoamericana, especializándome en el stack MEAN (MongoDB, Express.js, Angular, Node.js). Este programa me permitió dominar tanto el frontend como el backend del desarrollo de aplicaciones web.",
+        descripcion: "Desarrollador Fullstack en la Universidad Iberoamericana, especializándome en el stack MEAN (MongoDB, Express.js, Angular, Node.js). Este programa me permitió aprender frontend como el backend del desarrollo de aplicaciones web.",
 
     },
     {
@@ -43,7 +43,7 @@ const dataestudios = [
         titulo: "Comunicacion Publicitaria",
         fecha: "2015 - 2017",
         institucion: "Fundación Academia de Dibujo Profesional",
-        descripcion: "Estuve estudiando Comunicación Publicitaria en FADP, desarrolle habilidades creativas y estratégicas para la publicidad. Durante mi formación, adquirí conocimientos en áreas como la creación de campañas publicitarias, el manejo de medios digitales y la psicología del consumidor.",
+        descripcion: "Desarrolle habilidades creativas y estratégicas para la publicidad. Durante mi formación, adquirí conocimientos en áreas como la creación de campañas publicitarias, el manejo de medios digitales y la psicología del consumidor.",
 
     }
 
