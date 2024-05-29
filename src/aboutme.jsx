@@ -5,52 +5,55 @@ import Disenoicons from "./logos/icondiseno";
 import Iconlenguajes from "./logos/iconlenguajes";
 import Iconoframework from "./logos/iconframework";
 
-
+import {
+    MagicCard,
+    MagicContainer,
+} from "./components/magicui/magic-card";
 
 
 function Aboutme() {
 
     return (
 
-        <div className="container mx-auto px-4 ">
-
-            <div className="grid grid-cols-1  md:grid-cols-3 md:gap-8 md:p-10 " style={{ alignContent: 'stretch' }}>
-
-                <div className="col-span-1 md:col-span-2 mb-8 md:mb-0">
-
-                    <Card className="py-8 px-8 bg-white/10 text-zinc-1000 h-full  hover:-translate-y-1 hover:scale-102  duration-600 glass">
-                        <CardHeader className="pb-0 pt-2 px-0 md:px-4 flex-col items-start">
-                            <div className="justify-between flex w-full">
-                                <h3 className="text-xl">Bienvenidos, 👋🏼</h3>
-                                <div>
-                                    <Socialicons />
-                                </div>
+        <div className="container mx-auto px-4 md:mt-16 z-0">
+            <div className="flex flex-auto flex-row gap-10">
+                <MagicContainer
+                    className={
+                        "flex h-full md:h-[500px]  w-full flex-col md:gap-10 lg:h-[400px] lg:flex-row px-3 md:px-0 mb-24 md:mb-10"
+                    }
+                >
+                    <MagicCard
+                        borderWidth={3}
+                        className="flex md:w-8/12 cursor-pointer flex-col items-start justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)] p-7 md:p-12 shadow-2xl text-justify">
+                        <div className="flex flex-col flex-col-reverse md:flex-row md:justify-between flex w-full">
+                            <h3 className="text-xl text-center md:text-left">Bienvenidos, 👋🏼</h3>
+                            <div className="flex mb-5 md:mt-0 justify-center">
+                                <Socialicons />
                             </div>
-                            <h1 className="text-4xl font-bold mb-7 mt-4 md:mt-1">¿Desarrollador o diseñador?  </h1>
-                            <p className="pr-0 md:pr-20 text-lg" > Las dos, apasionado del  <b>diseño gráfico y la programación de software</b>. Inicié mi trayectoria estudiando Comunicación Publicitaria, donde adquirí habilidades en diseño gráfico, tendencias publicitarias y marketing digital. Después, por hobby, descubrí la programación y fusioné mis habilidades para convertirme en un diseñador y desarrollador Front-end desde hace mas de <b>5 años.</b> Manejo la suite Adobe y herramientas de UI/UX como Figma, junto con habilidades sólidas en desarrollo de código, especializándome en lenguajes de programación del lado del Front-end.</p>
-                            
-                        </CardHeader>
-                        
-                    </Card>
-                </div>
+                        </div>
+                        <h1 className="text-4xl font-bold mb-7 mt-4 md:mt-1  text-center md:text-left">¿Desarrollador o diseñador?  </h1>
+                        <p className="pr-0 md:pr-5 text-lg" > Las dos, apasionado del  <b>diseño gráfico y la programación de software</b>. Inicié mi trayectoria estudiando Comunicación Publicitaria, donde adquirí habilidades en diseño gráfico, tendencias publicitarias y marketing digital. Después, por hobby, descubrí la programación y fusioné mis habilidades para convertirme en un diseñador y desarrollador Front-end desde hace mas de <b>5 años.</b> Manejo la suite Adobe y herramientas de UI/UX como Figma, junto con habilidades sólidas en desarrollo de código, especializándome en lenguajes de programación del lado del Front-end.</p>
+                        <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
+                    </MagicCard>
+                    <MagicCard
+                        borderWidth={3}
+                        className="flex md:w-4/12 cursor-pointer flex-col items-start justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)] mt-10 md:mt-0 p-6 md:p-12 shadow-2xl">
+                        <p className="text-4xl font-bold mb-5">Herramientas</p>
+                        <h4 className="font-bold text-large mb-4">Diseño
+                            <Disenoicons /> </h4>
+                        <h4 className="font-bold text-large mb-4">Programación
+                            <Iconlenguajes /></h4>
+                        <h4 className="font-bold text-large mb-4" >Frameworks
+                            <Iconoframework /></h4>
 
-                <div className="col-span-1 ">
-                    <Card className="py-4 px-10 bg-white/10 text-zinc-1000 h-full self-center  hover:-translate-y-1 hover:scale-102  duration-600 glass">
-                        <CardHeader className=" flex-col items-start mb-3">
-                            <p className="text-4xl font-bold">Herramientas</p>
-                        </CardHeader>
-                        <CardBody className="overflow-visible py-2">
-                            <h4 className="font-bold text-large mb-4">Diseño
-                                <Disenoicons/> </h4>
-                            <h4 className="font-bold text-large mb-4">Programación
-                                <Iconlenguajes/></h4>
-                            <h4 className="font-bold text-large mb-4" >Frameworks
-                                <Iconoframework/></h4>
-                        </CardBody>
-                    </Card>
-                </div>
+                        <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
+                    </MagicCard>
+                </MagicContainer>
+
 
             </div>
+
+
         </div>
 
 

@@ -45,7 +45,7 @@ function Proyectos() {
 
                             </div>
                         </div>
-                        <div className={`col-span-1 mb-28 md:col-span-2 ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}>
+                        <div className={`col-span-1 mb-28 md:mb-0 md:p-2 md:col-span-2 ${index % 2 !== 0 ? 'md:order-1' : 'md:order-2'}`}>
                             <Card
                                 className=" py-2 px-2 bg-white/10 text-zinc-1000 h-96 self-center hover:-translate-y-1 hover:scale-102 duration-600"
                                 style={{

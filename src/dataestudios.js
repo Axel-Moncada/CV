@@ -11,7 +11,7 @@ const dataestudios = [
         id: 2,
         titulo: "Desarrolador FullStack",
         fecha: "2022 - 2022",
-        institucion: "Corporación Universitaria Iberoamericana",
+        institucion: "Universidad Iberoamericana",
         descripcion: "Desarrollador Fullstack en la Universidad Iberoamericana, especializándome en el stack MEAN (MongoDB, Express.js, Angular, Node.js). Este programa me permitió aprender frontend como el backend del desarrollo de aplicaciones web.",
 
     },
