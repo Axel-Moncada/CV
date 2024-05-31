@@ -13,7 +13,7 @@ function Proyectos() {
     const tamano = 25
 
     return (
-        <div className="container mx-auto w-10/12  md:w-7/12 mt-32 ">
+        <div className="container mx-auto w-10/12  md:w-7/12 mt-32  " id="proyectos">
             <div className="" style={{ alignContent: 'stretch' }}>
                 <h1 className="text-center text-4xl font-extrabold mt-10 mb-5">Proyectos principales</h1>
 

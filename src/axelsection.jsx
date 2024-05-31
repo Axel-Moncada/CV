@@ -49,7 +49,7 @@ function Axelsection() {
                                     <li>En mis tiempos libres soy fotografo</li>
                                     <li>Hago trading cuando tengo la posibilidad</li>
                                     <li>Disfruto mucho los videojuegos</li>
-                                    
+
                                 </ul>
 
                             </CardBody>
@@ -123,36 +123,38 @@ function Axelsection() {
 
                         </Card>
                     </div>
-                    
-                    <div className=" col-span-2 mt-5 mb-10 md:mb-0 md:mt-0">                    
+
+                    <div className=" col-span-2 mt-5 mb-10 md:mb-0 md:mt-0">
                         <div className="   pb-10 aling-center items-center md:absolute  ">
-                        <Card className=" bg-white/10 text-zinc-1000 h-full  glass justify-center items-center p-3">
-                            <div className="flex flex-row gap-6 items-center">
-                                <div className='text-center mb-1'>
-                                    <DateTimeComponent/>
-                                </div>
-                            </div>
-
-                            <div className='bg-black w-100 p-3 rounded-full flex flex-row gap-28 md:gap-12  mt-4 md:mt-2'>
-                                <div className='flex flex-row items-center '>
-                                    <img src={emoji} alt="" width={40} height={60} />
-                                    <div className='pl-3 items-center '>
-                                        <p className='text-sm text-white '>Axel M.</p>
-                                        <p className='text-xs text-default-500'>Frontend</p>
+                            <Card className=" bg-white/10 text-zinc-1000 h-full  glass justify-center items-center p-3">
+                                <div className="flex flex-row gap-6 items-center">
+                                    <div className='text-center mb-1'>
+                                        <DateTimeComponent />
                                     </div>
+                                </div>
 
+                                <div className='bg-black w-100 p-3 rounded-full flex flex-row gap-28 md:gap-12  mt-4 md:mt-2'>
+                                    <div className='flex flex-row items-center '>
+                                        <img src={emoji} alt="" width={40} height={60} />
+                                        <div className='pl-3 items-center '>
+                                            <p className='text-sm text-white '>Axel M.</p>
+                                            <p className='text-xs text-default-500'>Frontend</p>
+                                        </div>
+
+                                    </div>
+                                    <div className='flex flex-row gap-2 call mt-0'>
+                                        <img className='hover:-translate-y-1 hover:scale-105 duration-700' src={callred} alt="" />
+                                        <a href="https://wa.me/573146620066"  target='_blank'>
+                                            <img className='hover:-translate-y-1 hover:scale-105 duration-700' src={callgreen} alt="" />
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className='flex flex-row gap-2 call mt-0'>
-                                    <img className='hover:-translate-y-1 hover:scale-105 duration-700' src={callred} alt="" />
-                                    <img className='hover:-translate-y-1 hover:scale-105 duration-700' src={callgreen} alt="" />
-                                </div>
-                            </div>
                             </Card>
                         </div>
 
-                       
+
                     </div>
-                    
+
 
                 </div>
 

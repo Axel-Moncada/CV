@@ -47,8 +47,8 @@ function Heroseccion() {
             </div>
           )}
           <div>
-          
-            <div>               
+
+            <div>
               <img className='w-80 mx-auto' src={emoji} alt="" />
             </div>
           </div>
@@ -56,17 +56,20 @@ function Heroseccion() {
           <div className="text-center min-h-20">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl leading-10 dark:text-white">
               Hola, Soy  <span className='text-gradient'>  Axel Moncada, </span>
+              <div className='min-h-20'>
               <Initialtext />
+              </div>
             </h1>
 
-           
-           
+
+
 
             <div className='mt-10  flex md:space-x-20 justify-center'>
-              <button className='text-xl hover:border-solid hover:drop-shadow-8xl btn-blanco dark:bg-white dark:text-gray-900 dark:hover:bg-[#272334] dark:hover:text-white'>QUIEN SOY
+              <button onClick={() => window.location.href = '#experiencia'} className='text-xl hover:border-solid hover:drop-shadow-8xl btn-blanco dark:bg-white dark:text-gray-900 dark:hover:bg-[#272334] dark:hover:text-white'>EXPERIENCIA
               </button>
-              <button className='text-xl btn-blanco dark:bg-white dark:text-gray-900 dark:hover:bg-[#272334] dark:hover:text-white ' >MIS PROYECTOS</button>
-             
+
+              <button onClick={() => window.location.href = '#proyectos'} className='text-xl btn-blanco dark:bg-white dark:text-gray-900 dark:hover:bg-[#272334] dark:hover:text-white' >MIS PROYECTOS</button>
+
             </div>
           </div>
         </div>
