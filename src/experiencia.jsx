@@ -4,7 +4,7 @@ import { ExperienciaUI } from "./experienciaUI";
 
 function Experiencia() {
     return (
-        <div className="max-w-screen-xl mx-auto" id="experiencia">
+        <div className="max-w-screen-xl mx-auto z-0" id="experiencia">
 
             <ExperienciaUI></ExperienciaUI>
 

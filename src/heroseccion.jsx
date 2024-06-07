@@ -9,28 +9,28 @@ import bg from "./assets/bg-2.png"
 import bg3 from "./assets/bg-3.png"
 import pattern from "./assets/pattern.png"
 import { Initialtext } from './initialtext';
+import { motion } from 'framer-motion';
+import BtnHome from "./components/Botonesinicio"
 
 
 function Heroseccion() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div>
-      <div className="relative isolate px-6 md:pt-14">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 1 }}
+      id="inicio"
+    >
+
+
+
+      <div className="relative isolate px-6 md:pt-24">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-1">
 
-          <div className="mode">
-            <Switch
-              defaultSelected={theme === "dark"}
-              size="lg"
-              color="secondary"
-              startContent={<SunIcon />}
-              endContent={<MoonIcon />}
-              onClick={toggleTheme}
-            >
 
-            </Switch>
-          </div>
 
 
 
@@ -49,33 +49,38 @@ function Heroseccion() {
           <div>
 
             <div>
-              <img className='w-80 mx-auto' src={emoji} alt="" />
+              <motion.img
+                className='w-80 mx-auto'
+                src={emoji}
+                alt="emoji"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}                
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 1 }}
+              />
             </div>
           </div>
 
-          <div className="text-center min-h-20">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl leading-10 dark:text-white">
-              Hola, Soy  <span className='text-gradient'>  Axel Moncada, </span>
-              <div className='min-h-20'>
+          <div className="text-center min-h-40">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-white">
+              Hola, Soy <span className='text-gradient'>Axel Moncada,</span> </h1>
+
+            <div className='min-h-32'>
               <Initialtext />
-              </div>
-            </h1>
+            </div>
 
 
 
 
-            <div className='mt-10  flex md:space-x-20 justify-center'>
-              <button onClick={() => window.location.href = '#experiencia'} className='text-xl hover:border-solid hover:drop-shadow-8xl btn-blanco dark:bg-white dark:text-gray-900 dark:hover:bg-[#272334] dark:hover:text-white'>EXPERIENCIA
-              </button>
-
-              <button onClick={() => window.location.href = '#proyectos'} className='text-xl btn-blanco dark:bg-white dark:text-gray-900 dark:hover:bg-[#272334] dark:hover:text-white' >MIS PROYECTOS</button>
+            <div className='  flex md:flex-row flex-col md:space-x-20 justify-center'>
+              <BtnHome></BtnHome>
 
             </div>
           </div>
         </div>
 
       </div>
-    </div>
+    </motion.div >
   )
 
 

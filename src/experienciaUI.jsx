@@ -3,12 +3,19 @@ import {
     MagicContainer,
 } from "./components/magicui/magic-card";
 
+import { motion } from "framer-motion";
+
 export function ExperienciaUI() {
     return (
-        <div>
+        <motion.div
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        viewport={{once:true, amount:0.5}}
+        transition={{duration:1}}
+        className="z-0">
             <MagicContainer
                 className={
-                    "flex h-full md:h-[500px]  w-full flex-col gap-8 md:gap-10 lg:h-[300px] lg:flex-row px-8 md:px-0 mb-24 md:mb-10"
+                    "flex h-full md:h-[500px]  w-full flex-col gap-8 md:gap-10 lg:h-[300px] lg:flex-row px-8 md:px-1 mb-24 md:mb-10"
                 }
             >
                 <MagicCard
@@ -32,7 +39,7 @@ export function ExperienciaUI() {
 
             <MagicContainer
                 className={
-                    "flex h-full md:h-[500px]  w-full flex-col gap-10 lg:h-[300px] lg:flex-row px-8 md:px-0 mb-24 md:mb-10 flex-col-reverse  "
+                    "flex h-full md:h-[500px]  w-full flex-col gap-10 lg:h-[300px] lg:flex-row px-8 md:px-1 mb-24 md:mb-10 flex-col-reverse  "
                 }
             >
 
@@ -60,7 +67,7 @@ export function ExperienciaUI() {
 
             <MagicContainer
                 className={
-                    "flex h-full md:h-[500px]  w-full flex-col gap-10 lg:h-[300px] lg:flex-row px-8 md:px-0 mb-24 md:mb-10"
+                    "flex h-full md:h-[500px]  w-full flex-col gap-10 lg:h-[300px] lg:flex-row px-8 md:px-1 mb-24 md:mb-10"
                 }
             >
                 <MagicCard
@@ -89,7 +96,7 @@ export function ExperienciaUI() {
 
 
 
-        </div>
+        </motion.div>
     );
 
 }

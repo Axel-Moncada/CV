@@ -5,6 +5,7 @@ import { Tooltip } from "@nextui-org/tooltip";
 import csslogo from "./logos/css-b.svg"
 import logobootstrap from "./logos/Bootstrap-b.svg"
 import { ThemeContext } from "./contexts/themecontexts";
+import { motion } from "framer-motion";
 
 function Proyectos() {
     const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -19,7 +20,14 @@ function Proyectos() {
 
                 {dataproyectos.map((proyecto, index) => (
 
-                    <div key={index} className={`grid grid-cols-1 md:grid-cols-6 md:gap-8 md:p-10`}
+                    <motion.div 
+                        initial={{opacity:0}}
+                        whileInView={{opacity:1}}
+                        viewport={{once:true, amount:0.5}}
+                        transition={{duration:1}}
+                    
+                    
+                    key={index} className={`grid grid-cols-1 md:grid-cols-6 md:gap-8 md:p-10`}
                         onMouseEnter={() => setHoveredIndex(index)}
                         onMouseLeave={() => setHoveredIndex(null)}
                     >
@@ -75,7 +83,7 @@ function Proyectos() {
                             </Card>
                         </div>
                     
-            </div>
+            </motion.div>
                 ))}
 
 

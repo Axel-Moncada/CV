@@ -4,6 +4,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import {
+    MagicCard,
+    MagicContainer,
+} from "./components/magicui/magic-card";
+
 
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import { Listbox, ListboxItem } from "@nextui-org/react";
@@ -28,33 +33,40 @@ import callgreen from "./assets/Phone-Call-green.png"
 import contacticon from "./assets/contact.svg"
 
 import DateTimeComponent from './datetimecomponent';
-
+import { motion } from 'framer-motion';
 
 function Axelsection() {
     return (
         <div>
             <div className="max-w-screen-xl mx-auto">
 
-                <div className="grid grid-cols-1 md:grid-cols-8 md:gap-8 md:p-10 ">
-                    <div className=" col-span-1 px-6 md:px-0 md:col-span-4">
-                        <Card className=" bg-white/10 text-zinc-1000 h-full  hover:-translate-y-1 hover:scale-102  duration-600 glass justify-center items-center">
-                            <CardHeader className=" flex-col md:items-start px-10 pt-10">
-                                <h2 className=" text-center text-5xl md:text-left md:text-3xl font-bold">Hoobies </h2>
-                            </CardHeader>
-                            <CardBody className="overflow-visible px-14 md:pl-20 pt-1 pb-10">
-                                <ul className="list-disc text-lg	">
-                                    <li>Me encanta la musica toco saxofon y bajo</li>
-                                    <li>Soy diseñador creativo de varios festivales musicales</li>
-                                    <li>Me encanta hacer videos y animaciones</li>
-                                    <li>En mis tiempos libres soy fotografo</li>
-                                    <li>Hago trading cuando tengo la posibilidad</li>
-                                    <li>Disfruto mucho los videojuegos</li>
+                <div className="grid grid-cols-1 md:grid-cols-8 md:gap-8 md:p-10 md:pb-0 ">
+                    <div
 
+
+
+                        className=" col-span-1 px-1 md:px-1 md:px-0 md:col-span-4">
+                        <MagicContainer className={
+                            "flex h-full md:h-[700px]  w-full flex-col gap-1 lg:h-[320px] lg:flex-row px-8 md:px-0 mb-8 md:mb-10"}>
+                            <MagicCard
+                                borderwidth={3}
+                                className="flex md:w-6/6 p-10 md:p-12 md:pt-11 cursor-pointer flex-col items-start justify-start overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)]  shadow-lg">
+                                <h2 className=" text-left text-5xl md:text-left md:text-5xl font-bold mb-4">Mas de mi </h2>
+                                <ul className="text-lg md:pl-1">
+                                    <li>✔️ Soy diseñador creativo de varios festivales de musica</li>
+                                    <li>✔️ Musico apasionado, toco Saxofon y Bajo</li>
+                                    <li>✔️ Me encanta crear crear y crear</li>
+                                    <li>✔️ En mis tiempos libres soy fotografo</li>
+                                    <li>✔️ Futuro trader del NASQ y SP500</li>
+                                    <li>✔️ Me gustan muchos los deportes</li>
                                 </ul>
+                                <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
+                            </MagicCard>
 
-                            </CardBody>
+                        </MagicContainer>
 
-                        </Card>
+
+
                     </div>
 
                     <div className=" col-span-2 px-6 md:px-0 mt-8 md:mt-0">
@@ -95,19 +107,28 @@ function Axelsection() {
                 </div>
                 <div className="grid grid-cols-1 p-4 md:grid-cols-8 md:gap-8 md:p-10 md:pt-1">
                     <div className=" col-span-2">
-                        <Card className=" bg-white/10 text-zinc-1000 h-full  hover:-translate-y-1 hover:scale-102  duration-600 glass justify-center items-center">
-                            <CardHeader className=" flex-col px-10 pb-0 text-center">
+                        <MagicContainer className={
+                            "flex h-full md:h-[700px]  w-full flex-col gap-1 lg:h-[220px] lg:flex-row px-8 md:px-1 mb-8 md:mb-10"}>
+                            <MagicCard
+                                borderwidth={3}
+                                className="flex md:w-6/6 p-10 md:p-12 md:pt-8 cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)]  shadow-lg">
                                 <h3 className="text-xl font-light ">English level</h3>
-                            </CardHeader>
-                            <CardBody className="overflow-visible text-center -mt-6">
                                 <h2 className="text-9xl font-bold">A2</h2>
-                            </CardBody>
+                                <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
+                            </MagicCard>
 
-                        </Card>
+                        </MagicContainer>
+
+
+
                     </div>
 
                     <div className=" col-span-4">
-                        <Card className=" bg-white/10 text-zinc-1000 h-96 mt-8 md:m-0 md:h-full  hover:-translate-y-1 hover:scale-102  duration-600 glass justify-center items-center map">
+
+
+
+
+                        <Card className=" bg-white/10 text-zinc-1000 h-96 mt-8 md:m-0 md:h-56 hover:-translate-y-1 hover:scale-102  duration-600 glass justify-center items-center map">
                             <video
                                 autoPlay
                                 loop
@@ -125,15 +146,20 @@ function Axelsection() {
                     </div>
 
                     <div className=" col-span-2 mt-5 mb-10 md:mb-0 md:mt-0">
-                        <div className="   pb-10 aling-center items-center md:absolute  ">
-                            <Card className=" bg-white/10 text-zinc-1000 h-full  glass justify-center items-center p-3">
+
+
+                        <MagicContainer className={
+                            "flex h-full md:h-[700px]  w-full flex-col gap-1 lg:h-[220px] lg:flex-row px-8 md:px-0 mb-8 md:mb-10"}>
+                            <MagicCard
+                                borderwidth={3}
+                                className="flex md:w-6/6 p-10 md:p-4 md:pt-8 cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)]  shadow-lg">
                                 <div className="flex flex-row gap-6 items-center">
                                     <div className='text-center mb-1'>
                                         <DateTimeComponent />
                                     </div>
                                 </div>
 
-                                <div className='bg-black w-100 p-3 rounded-full flex flex-row gap-28 md:gap-12  mt-4 md:mt-2'>
+                                <div className='bg-black w-full p-3  md:p-3 rounded-full flex flex-row gap-28 md:gap-10  mt-4 md:mt-2'>
                                     <div className='flex flex-row items-center '>
                                         <img src={emoji} alt="" width={40} height={60} />
                                         <div className='pl-3 items-center '>
@@ -144,13 +170,25 @@ function Axelsection() {
                                     </div>
                                     <div className='flex flex-row gap-2 call mt-0'>
                                         <img className='hover:-translate-y-1 hover:scale-105 duration-700' src={callred} alt="" />
-                                        <a href="https://wa.me/573146620066"  target='_blank'>
-                                            <img className='hover:-translate-y-1 hover:scale-105 duration-700' src={callgreen} alt="" />
-                                        </a>
+
+                                        <img
+                                            onClick={() => window.open("https://wa.me/573146620066", "_blank")}
+                                            className="hover:-translate-y-1 hover:scale-105 duration-700 w-full"
+                                            src={callgreen}
+                                            alt="WhatsApp"
+                                            width={60}
+                                        />
+
                                     </div>
                                 </div>
-                            </Card>
-                        </div>
+                                <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
+                            </MagicCard>
+
+                        </MagicContainer>
+
+
+
+
 
 
                     </div>

@@ -15,7 +15,7 @@ function Menuaxel() {
                 }
             >
                 <MagicCard
-                    borderWidth={3}
+                    borderwidth={3}
                     className="flex md:w-4/12 cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)]  md:p-8 shadow-2xl text-justify">
                     <ul className="flex flex-row gap-10 text-center z-50" >
                         <li>Inicio</li>
