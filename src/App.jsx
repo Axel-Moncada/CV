@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'swiper/css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+import { BrowserRouter as Router, Route, Routes, MemoryRouter } from 'react-router-dom'; 
 import Header from './header.jsx';
 import Proyectos from './proyectos.jsx';
 import Estudios from './estudios.jsx';
@@ -48,13 +48,17 @@ function App() {
   return (
    
       <div className='bg-default-100 dark:bg-zinc-900'>
-        <Mode />
-        <Routes>
-          <Route  path="CV/"  element={<Home/>} />
        
-          <Route path="/CV/:companyName" element={<HomeWithCompany />} />
+        <Mode />
+         <MemoryRouter basename='/CV'>
+        <Routes>
+          <Route  path="/"  element={<Home/>} />
+       
+          <Route path="/:companyName" element={<HomeWithCompany />} />
           
         </Routes>
+        </MemoryRouter>
+
       </div>
     
   );
