@@ -50,8 +50,9 @@ function App() {
       <div className='bg-default-100 dark:bg-zinc-900'>
         <Mode />
         <Routes>
-          <Route  path="/"  element={<Home/>} />
-          <Route  path="/portafolio/:companyName"  element={<HomeWithCompany/>} />
+          <Route  path="CV/"  element={<Home/>} />
+       
+          <Route path="/CV/:companyName" element={<HomeWithCompany />} />
           
         </Routes>
       </div>

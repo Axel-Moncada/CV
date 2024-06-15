@@ -17,8 +17,11 @@ import { useParams } from 'react-router-dom';
 
 function Heroseccion() {
   const { theme, toggleTheme } = useContext(ThemeContext);
+
+  
   let { companyName } = useParams();
-  console.log(companyName)
+  const namecom = companyName ? companyName.slice(3) : '';
+  
   
 
   return (
@@ -68,7 +71,7 @@ function Heroseccion() {
 
           <div className="text-center min-h-40">
             <h1 className="text-4xl font-regular tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-            👋🏻  Hola {companyName} , Me llamo <br/>   <div className='mt-1 '> <span className='text-gradient sm:text-7xl font-black'>Axel Moncada</span></div> </h1>
+            👋🏻  Hola {namecom} , Me llamo <br/>   <div className='mt-1 '> <span className='text-gradient sm:text-7xl font-black'>Axel Moncada</span></div> </h1>
 
             <div className='min-h-32'>
               <Initialtext />
