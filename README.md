@@ -35,7 +35,7 @@ Además, tengo un sólido conocimiento en bases de datos, tanto relacionales com
 
 
 ## 🛠 Habilidades
-
+- 🎨 Diseño grafico: Photoshop, Illustrator, After Effects, Premiere
 - 💻 Lenguajes de Programación: JavaScript, HTML, CSS, PHP
 - 🌐 Tecnologías Web: React, Angular, Node.js, Express, Bootstrap
 - 🛠 Herramientas: Git, GitHub, Figma, Adobe Suite
@@ -44,7 +44,7 @@ Además, tengo un sólido conocimiento en bases de datos, tanto relacionales com
 
 
 
-## 📬 Contacto
+## 📬 Contacto 
 
 ¡Gracias por revisar mi CV! Puedes contactarme a través de los siguientes medios:
 
