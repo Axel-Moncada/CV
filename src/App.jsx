@@ -51,7 +51,7 @@ function App() {
         <Mode />
         <Routes>
           <Route  path="/"  element={<Home/>} />
-          <Route  path="/:companyName"  element={<HomeWithCompany/>} />
+          <Route  path="/portafolio/:companyName"  element={<HomeWithCompany/>} />
           
         </Routes>
       </div>
