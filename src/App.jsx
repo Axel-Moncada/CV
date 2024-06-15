@@ -1,11 +1,12 @@
-import './App.css'
+import React from 'react';
+import './App.css';
 import 'swiper/css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Header from './header.jsx';
 import Proyectos from './proyectos.jsx';
 import Estudios from './estudios.jsx';
 import Experiencia from './experiencia.jsx';
 import Axelsection from './axelsection.jsx';
-import Menuaxel from './menu.jsx';
 import Mode from './Mode.jsx';
 import Comentarios from './Carruselcomen.jsx';
 import Hablemos from './Hablemos.jsx';
@@ -13,31 +14,49 @@ import Hablemos from './Hablemos.jsx';
 
 
 
-
-
-
-
-
-function App() {
-
-
-
-
+function Home () {
   return (
-    <div className='bg-default-100 dark:bg-zinc-900'>
-      
-      <Mode />
+    <div>
       <Header />
+      <Experiencia />
       <Proyectos />
       <Estudios />
-      <Experiencia/>
-      <Comentarios/>
-      <Axelsection/>
-      <Hablemos/>
-
-
+      
+      <Comentarios />
+      <Axelsection />
+      <Hablemos />
     </div>
-  )
+  );
 }
 
-export default App
+function HomeWithCompany() {
+  return (
+    <div>
+      <Header />
+      <Experiencia />
+      <Proyectos />
+      <Estudios />
+      
+      <Comentarios />
+      <Axelsection />
+      <Hablemos />
+    </div>
+  );
+}
+
+function App() {
+  return (
+   
+      <div className='bg-default-100 dark:bg-zinc-900'>
+        <Mode />
+        <Routes>
+          <Route  path="/"  element={<Home/>} />
+          <Route  path="/:companyName"  element={<HomeWithCompany/>} />
+          
+        </Routes>
+      </div>
+    
+  );
+}
+
+export default App;

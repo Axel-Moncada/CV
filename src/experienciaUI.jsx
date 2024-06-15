@@ -13,6 +13,7 @@ export function ExperienciaUI() {
         viewport={{once:true, amount:0.5}}
         transition={{duration:1}}
         className="z-0">
+            <h1 className="text-center text-4xl font-extrabold mt-16 mb-16">Experiencia</h1>
             <MagicContainer
                 className={
                     "flex h-full md:h-[500px]  w-full flex-col gap-8 md:gap-10 lg:h-[300px] lg:flex-row px-8 md:px-1 mb-24 md:mb-10"

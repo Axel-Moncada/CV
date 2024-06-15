@@ -8,7 +8,8 @@ html {
 }
 
 .text-gradient {
-  background: linear-gradient(45deg, #6d0064, #db00be);
+  background-image: linear-gradient(to right, #8950b4 26%, #a538ff 100%);
+
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
