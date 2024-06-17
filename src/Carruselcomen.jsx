@@ -77,7 +77,9 @@ const ReviewCard = ({
 
 const Comentarios = () => {
     return (
-        <div className="flex justify-center align-center mt-32 mb-32">
+        <div> <h1 className="text-center text-4xl font-extrabold mt-10 mb-5">Recomendaciones</h1>
+        <div className="flex justify-center align-center mt-16 mb-32">
+           
             <div className=" flex h-full w-10/12 flex-col items-center justify-center overflow-hidden rounded-lg   py-20 comentarios ">
                 <Marquee pauseOnHover className="[--duration:20s]">
                     {firstRow.map((review) => (
@@ -95,6 +97,7 @@ const Comentarios = () => {
                 <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l "></div>
 
             </div>
+        </div>
         </div>
     );
 };

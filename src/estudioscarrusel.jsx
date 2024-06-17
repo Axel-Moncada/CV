@@ -55,7 +55,7 @@ function Estudioscarrusel() {
                 }}
 
                 modules={[Autoplay, Pagination]}
-                className="mySwiper px-20 pt-5 carrusel"
+                className="mySwiper px-20 pt-5 carrusel z-0"
             >
 
                 {dataestudios.map((estudio, index) => (

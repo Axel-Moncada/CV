@@ -89,7 +89,7 @@ function Axelsection() {
                             }}
                             navigation={false}
                             modules={[Autoplay, Pagination, Navigation]}
-                            className="mySwiper2 h-80"
+                            className="mySwiper2 h-80 z-0"
                         >
                             <SwiperSlide><img src={photo1} alt="" /></SwiperSlide>
                             <SwiperSlide><img src={photo2} alt="" /></SwiperSlide>

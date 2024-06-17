@@ -1,69 +1,75 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure } from "@nextui-org/react";
+import foto from "../src/assets/axel.png"
+import Mobile from "./Mobile";
+import { motion } from "framer-motion";
 
 
 export default function Hablemos() {
-    const { isOpen, onOpen, onClose } = useDisclosure();
-    const [backdrop, setBackdrop] = React.useState('opaque')
 
-    const backdrops = ["blur"];
 
-    const handleOpen = (backdrop) => {
-        setBackdrop(backdrop)
-        onOpen();
+    const [isMobileVisible, setMobileVisible] = useState(false)
+    const mobileRef = useRef(null);
+
+
+    const handleOpenMobile = () => {
+        setMobileVisible(true);
+
     }
+
+    useEffect(() => {
+        if (isMobileVisible) {
+            document.addEventListener("click", handleClickAfuera)
+        } else {
+            document.removeEventListener("click", handleClickAfuera)
+        }
+        return () => {
+            document.removeEventListener("click", handleClickAfuera)
+        }
+    })
+
+    const handleClickAfuera = (event) => {
+        if (mobileRef.current || setMobileVisible(true) && !mobileRef.current.contains(event.target)) {
+            setMobileVisible(false)
+        }
+    }
+
 
     return (
         <>
-            <div className="flex flex-wrap justify-center gap-3">
-                {backdrops.map((b) => (
-                    <Button
-                        key={b}
-                        variant="shadow"
-                        color="bg-purple-900"
-                        onPress={() => handleOpen(b)}
-                        className="capitalize text-5xl shadow"
-                    >
-                        {"Hablemos"}
-                    </Button>
-                ))}
+            <div className="flex flex-col flex-wrap justify-center items-center gap-3 pb-16 ">
+                <p className="text-center text-lg">¿Tienes algun proyecto?</p>
+
+                <Button
+
+                    onPress={handleOpenMobile}
+                    className="capitalize btnescribe border-white p-10 font-bold text-5xl  h-16 w-64 ">
+                    {"Escribeme"}
+                </Button>
+
             </div>
-            <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose}>
-                <ModalContent>
-                    {(onClose) => (
-                        <>
-                            <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
-                            <ModalBody>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nullam pulvinar risus non risus hendrerit venenatis.
-                                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nullam pulvinar risus non risus hendrerit venenatis.
-                                    Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                                </p>
-                                <p>
-                                    Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit
-                                    dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis.
-                                    Velit duis sit officia eiusmod Lorem aliqua enim laboris do dolor eiusmod.
-                                    Et mollit incididunt nisi consectetur esse laborum eiusmod pariatur
-                                    proident Lorem eiusmod et. Culpa deserunt nostrud ad veniam.
-                                </p>
-                            </ModalBody>
-                            <ModalFooter>
-                                <Button color="danger" variant="light" onPress={onClose}>
-                                    Close
-                                </Button>
-                                <Button color="primary" onPress={onClose}>
-                                    Action
-                                </Button>
-                            </ModalFooter>
-                        </>
-                    )}
-                </ModalContent>
-            </Modal>
+
+            {isMobileVisible && (
+                <div className="mobileClick">
+                    <motion.div
+
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40">
+
+                    </motion.div>
+                    <div ref={mobileRef} className="fixed  inset-20 flex justify-center items-center z-50">
+                        <Mobile />
+                    </div>
+                </div>
+
+            )}
+
+
+
+
+
         </>
     );
 }

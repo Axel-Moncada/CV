@@ -15,6 +15,11 @@ html {
   color: transparent;
 }
 
+.btnescribe {
+  background-image: linear-gradient(to right, #623685 26%, #591e8a 100%);
+
+}
+
 
 .btn-blanco {
   border-radius: 60px;
@@ -26,27 +31,27 @@ html {
 }
 
 .btn-blanco:hover {
-  background: rgb(82,49,129);
-background: linear-gradient(90deg, rgba(82,49,129,1) 0%, rgba(235,156,71,1) 100%);
+  background: rgb(82, 49, 129);
+  background: linear-gradient(90deg, rgba(82, 49, 129, 1) 0%, rgba(235, 156, 71, 1) 100%);
 }
 
 
 
-.background{ 
+.background {
   position: fixed;
   right: -280px;
   bottom: -300px;
-  z-index: -999;  
+  z-index: -999;
   opacity: 0.5;
- 
+
 }
 
 #bg3 {
   position: fixed;
   right: 1000px;
   bottom: 0px;
-  z-index: -999;  
-  
+  z-index: -999;
+
 }
 
 #pattern {
@@ -58,7 +63,7 @@ background: linear-gradient(90deg, rgba(82,49,129,1) 0%, rgba(235,156,71,1) 100%
 }
 
 
-.axelphoto{
+.axelphoto {
   background-image: url(assets/axel.png);
   background-size: 180%;
   background-repeat: no-repeat;
@@ -66,11 +71,11 @@ background: linear-gradient(90deg, rgba(82,49,129,1) 0%, rgba(235,156,71,1) 100%
 }
 
 
-.mode{
+.mode {
   position: fixed;
   z-index: 9999999;
-  bottom:50px;
-  right:30px;
+  bottom: 50px;
+  right: 30px;
 }
 
 
@@ -112,15 +117,15 @@ background: linear-gradient(90deg, rgba(82,49,129,1) 0%, rgba(235,156,71,1) 100%
 }
 
 
-.iconwhite2  {
-  filter: invert(100%) !important ;
+.iconwhite2 {
+  filter: invert(100%) !important;
 }
 
 
 
 
 .swiper-pagination-bullet-active {
-    background: #2b2b2b;
+  background: #2b2b2b;
 }
 
 .swiper-pagination-bullet {
@@ -132,8 +137,8 @@ background: linear-gradient(90deg, rgba(82,49,129,1) 0%, rgba(235,156,71,1) 100%
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; 
-  padding: 0px;   
+  user-select: none;
+  padding: 0px;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 99%);
 
 }
@@ -143,20 +148,20 @@ background: linear-gradient(90deg, rgba(82,49,129,1) 0%, rgba(235,156,71,1) 100%
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; 
-  padding: 0px;   
+  user-select: none;
+  padding: 0px;
   mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
-.glass{
+.glass {
 
-border:  1px solid rgba(245, 247, 250, 0.151);
+  border: 1px solid rgba(245, 247, 250, 0.151);
 }
 
 
 .mySwiper2 {
   width: 100%;
-  
+
   border-radius: 15px;
 }
 
@@ -174,41 +179,41 @@ border:  1px solid rgba(245, 247, 250, 0.151);
 }
 
 
-.menu{
+.menu {
 
   padding: 20px 40px;
   border-radius: 80px;
-  position:fixed;
+  position: fixed;
   top: 50px;
   z-index: 999;
-  
+
 }
 
-.flechaarriba{
+.flechaarriba {
   position: fixed;
   z-index: 9999999;
-  bottom:20px;
-  left:50px;
+  bottom: 20px;
+  left: 50px;
 }
 
 
 .socialmedia {
   position: fixed;
   z-index: 9999999;
-  bottom:500px;
-  left:0px;
-  
+  bottom: 500px;
+  left: 0px;
+
   color: white;
   padding: 20px 20px 20px 10px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  }
+}
 
-  .socialmedia li{
-    margin: 16px 0px;
-  }
+.socialmedia li {
+  margin: 16px 0px;
+}
 
-
-
-
-
+.mobileClick {
+  position: sticky;
+  bottom: 0px;
+}

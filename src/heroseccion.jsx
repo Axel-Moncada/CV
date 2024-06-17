@@ -11,7 +11,7 @@ import pattern from "./assets/pattern.png"
 import { Initialtext } from './initialtext';
 import { motion } from 'framer-motion';
 import BtnHome from "./components/Botonesinicio"
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 
 
 
@@ -20,7 +20,9 @@ function Heroseccion() {
 
   
   let { companyName } = useParams();
-  const namecom = companyName ? companyName.slice(3) : '';
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const parametro = searchParams.get('name');
   
   
 
@@ -71,7 +73,7 @@ function Heroseccion() {
 
           <div className="text-center min-h-40">
             <h1 className="text-4xl font-regular tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-            👋🏻  Hola {namecom} , Me llamo <br/>   <div className='mt-1 '> <span className='text-gradient sm:text-7xl font-black'>Axel Moncada</span></div> </h1>
+            👋🏻  Hola {parametro} , Me llamo <br/>   <div className='mt-1 '> <span className='text-gradient sm:text-7xl font-black'>Axel Moncada</span></div> </h1>
 
             <div className='min-h-32'>
               <Initialtext />
