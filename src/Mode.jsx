@@ -34,11 +34,12 @@ function Mode() {
             </div>
             
             <motion.div 
-              initial={{ x: -50 }}
+              initial={{ x: -350 }}
               animate={{ x: 0 }}             
               transition={{ delay: 6}}
             
-            className='socialmedia bg-gray-900 dark:bg-purple-900'>
+            className='socialmedia md:bg-gray-900   md:dark:bg-purple-900'>
+
                 <ul>
                     <li className=' transition duration-300 ease-in-out hover:scale-110'> <a href="https://wa.me/573146620066" target='blank'> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a></li>
                     <li  className=' transition duration-300 ease-in-out hover:scale-110'> 
@@ -50,7 +51,7 @@ function Mode() {
                         <svg width="24" height="24" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 1C1.44772 1 1 1.44772 1 2V13C1 13.5523 1.44772 14 2 14H13C13.5523 14 14 13.5523 14 13V2C14 1.44772 13.5523 1 13 1H2ZM3.05 6H4.95V12H3.05V6ZM5.075 4.005C5.075 4.59871 4.59371 5.08 4 5.08C3.4063 5.08 2.925 4.59871 2.925 4.005C2.925 3.41129 3.4063 2.93 4 2.93C4.59371 2.93 5.075 3.41129 5.075 4.005ZM12 8.35713C12 6.55208 10.8334 5.85033 9.67449 5.85033C9.29502 5.83163 8.91721 5.91119 8.57874 6.08107C8.32172 6.21007 8.05265 6.50523 7.84516 7.01853H7.79179V6.00044H6V12.0047H7.90616V8.8112C7.8786 8.48413 7.98327 8.06142 8.19741 7.80987C8.41156 7.55832 8.71789 7.49825 8.95015 7.46774H9.02258C9.62874 7.46774 10.0786 7.84301 10.0786 8.78868V12.0047H11.9847L12 8.35713Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path></svg>
                         </a></li>
                     <li  className=' transition duration-300 ease-in-out hover:scale-110'>
-                        <a href="https://axelmoncada.com/wp-content/uploads/2022/04/HV-2022-Axel-Moncada.pdf" target='blank'>
+                        <a href="http://axelmoncada.com/wp-content/uploads/2024/08/CV-AxelMoncadaBarriga-2024-.pdf" target='blank'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-square-user"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/></svg></a></li>
 
                     <li  className=' transition duration-300 ease-in-out hover:scale-110'>

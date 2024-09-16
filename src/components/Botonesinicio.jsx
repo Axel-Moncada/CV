@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 function BtnHome() {
     return (
-        <div className="z-10 flex min-h-[5rem] gap-10 items-center justify-center">
+        <div className="z-10 flex md:flex-row flex-col min-h-[5rem] gap-3 mt-10 md:mt-0 md:gap-10 items-center justify-center">
             <div
                 className={cn(
                     "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",

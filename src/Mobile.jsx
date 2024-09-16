@@ -11,7 +11,7 @@ function Mobile() {
             transition={{ duration: 0.8, ease: "easeOut" }}
 
             className="flex flex-col items-center max-w-screen-xl mx-auto  justify-center fixed bottom-0">
-            <div className=" mobile justify-center mobileClick">
+            <div className=" justify-center mobileClick">
                 <img className='w-80' src={mobile} alt="" />
             </div>
 

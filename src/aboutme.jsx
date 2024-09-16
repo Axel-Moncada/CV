@@ -21,7 +21,7 @@ function Aboutme() {
             <motion.div
                 initial={{ opacity: 0 , y:50 }}
                 whileInView={{ opacity: 1 , y:0 }}
-                viewport={{ once: true, amount: 0.6 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 2 }}
             
             className="flex flex-auto flex-row gap-10">

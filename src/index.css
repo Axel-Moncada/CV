@@ -63,6 +63,8 @@ html {
 }
 
 
+
+
 .axelphoto {
   background-image: url(assets/axel.png);
   background-size: 180%;
@@ -180,7 +182,6 @@ html {
 
 
 .menu {
-
   padding: 20px 40px;
   border-radius: 80px;
   position: fixed;
@@ -202,12 +203,12 @@ html {
   z-index: 9999999;
   bottom: 500px;
   left: 0px;
-
   color: white;
   padding: 20px 20px 20px 10px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
 
 .socialmedia li {
   margin: 16px 0px;
@@ -216,4 +217,58 @@ html {
 .mobileClick {
   position: sticky;
   bottom: 0px;
+}
+
+@media (max-width: 1250px) {
+  .socialmedia {
+    position: fixed;
+    z-index: 9999999;
+    display: flex;
+    flex-direction: row;
+    top: 0px;
+    justify-content: center;
+    text-align: center;
+    justify-self: center;
+    place-items: center;
+    width: 100%;        
+    height: 60px;
+    color: white;
+    border-radius: 20px;
+   
+  }
+
+  .socialmedia ul{  
+    display: flex;
+    flex-direction: row !important;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+
+    border-radius: 20px;
+    background-color: #591e8a;
+  }
+
+  .socialmedia li{
+    margin: 10px 10px;
+  }
+
+  #pattern {
+    display: none;
+  }
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-volume-slider {
+  display: none !important;
 }

@@ -43,7 +43,7 @@ export default function Hablemos() {
                 <Button
 
                     onPress={handleOpenMobile}
-                    className="capitalize btnescribe border-white p-10 font-bold text-5xl  h-16 w-64 ">
+                    className="capitalize btnescribe border-white p-10 font-bold text-5xl  h-16 w-64 text-white ">
                     {"Escribeme"}
                 </Button>
 

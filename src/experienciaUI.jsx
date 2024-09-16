@@ -10,7 +10,7 @@ export function ExperienciaUI() {
         <motion.div
         initial={{opacity:0}}
         whileInView={{opacity:1}}
-        viewport={{once:true, amount:0.5}}
+        viewport={{once:true}}
         transition={{duration:1}}
         className="z-0">
             <h1 className="text-center text-4xl font-extrabold mt-16 mb-16">Experiencia</h1>

@@ -20,16 +20,16 @@ function Proyectos() {
 
                 {dataproyectos.map((proyecto, index) => (
 
-                    <motion.div 
-                        initial={{opacity:0}}
-                        whileInView={{opacity:1}}
-                        viewport={{once:true, amount:0.5}}
-                        transition={{duration:1}}
-                    
-                    
-                    key={index} className={`grid grid-cols-1 md:grid-cols-6 md:gap-8 md:p-10`}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}
+
+
+                        key={index} className={`grid grid-cols-1 md:grid-cols-6 md:gap-8 md:p-10`}
                         onMouseEnter={() => setHoveredIndex(index)}
-                        
+
                     >
                         <div className={`col-span-1 md:col-span-4 py-8 px-1 pr-10 self-center  md:text-left ${index % 2 !== 0 ? 'md:order-2' : 'md:order-1'}`}>
                             <h3 className="text-lg">{proyecto.company}</h3>
@@ -71,6 +71,8 @@ function Proyectos() {
                                         autoPlay
                                         loop
                                         muted
+                                        playsInline
+                                        webkit-playsinline="true"
                                         style={{
                                             position: 'absolute',
                                             width: '100%',
@@ -82,12 +84,12 @@ function Proyectos() {
                                 )}
                             </Card>
                         </div>
-                    
-            </motion.div>
+
+                    </motion.div>
                 ))}
 
 
-        </div>
+            </div>
 
         </div >
 
