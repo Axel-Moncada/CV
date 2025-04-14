@@ -19,15 +19,15 @@ function Aboutme() {
 
         <div className="container mx-auto px-4 md:mt-16 z-0">
             <motion.div
-                initial={{ opacity: 0 , y:50 }}
-                whileInView={{ opacity: 1 , y:0 }}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 2 }}
-            
-            className="flex flex-auto flex-row gap-10">
+
+                className="flex flex-auto flex-row gap-10">
                 <MagicContainer
                     className={
-                        "flex h-full md:h-[500px]  w-full flex-col md:gap-10 lg:h-[400px] lg:flex-row px-3 md:px-0 md:mt-1 mb-24 md:mb-10"
+                        "flex h-full md:h-[500px]  w-full flex-col md:gap-10 lg:h-[600px] lg:flex-row px-3 md:px-0 md:mt-1 mb-24 md:mb-10"
                     }
                 >
 
@@ -40,11 +40,22 @@ function Aboutme() {
                                 <Socialicons />
                             </div>
                         </div>
-                        <h1 className="text-4xl font-bold mb-7 mt-4 md:mt-1  text-center md:text-left">¿Desarrollador o diseñador?  </h1>
-                        <p className="pr-0 md:pr-5 text-lg" > Las dos, apasionado del  <b>diseño gráfico y la programación de software</b>. Inicié mi trayectoria estudiando Comunicación Publicitaria, donde adquirí habilidades en diseño gráfico, tendencias publicitarias y marketing digital. Después, por hobby, descubrí la programación y fusioné mis habilidades para convertirme en un diseñador y desarrollador Front-end desde hace mas de <b>5 años.</b> Manejo la suite Adobe y herramientas de UI/UX como Figma, junto con habilidades sólidas en desarrollo de código, especializándome en lenguajes de programación del lado del Front-end.</p>
+                        <h1 className="text-4xl font-bold mb-7 mt-4 md:mt-1  text-center md:text-left">¿Diseñador o desarrollador? ¿Por qué no ambos? </h1>
+                        <p className="pr-0 md:pr-5 text-lg">
+                            Soy un apasionado del <b>diseño gráfico y la programación web</b>. Comencé mi camino en la Comunicación Publicitaria, donde desarrollé habilidades en diseño visual, tendencias digitales y marketing. Más adelante, descubrí el mundo del código y fusioné ambos mundos para construir experiencias web que combinan estética y funcionalidad.
+                            
+                            Desde hace más de 5 años me desempeño como <b>diseñador y desarrollador Front-end</b>, con experiencia en diseño UI/UX y programación web moderna.
+                            Manejo herramientas como <b>Figma</b>, <b>Adobe Photoshop</b>, <b>Illustrator</b>, y en el desarrollo domino tecnologías como:
+                            <br /><br />
+                            <b>Lenguajes:</b> HTML, CSS, JavaScript, PHP, SQL<br />
+                            <b>Frameworks y librerías:</b> React, Angular, Node.js, Express, Bootstrap, Tailwind CSS<br />
+                            <b>Bases de datos:</b> MySQL, MongoDB<br />
+                        
+                            Me especializo en crear sitios web responsive, optimizados para rendimiento, con una estructura clara y adaptable. Mi enfoque es construir soluciones web completas, desde el diseño visual hasta la implementación funcional.
+                        </p>
                         <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
                     </MagicCard>
-                 
+
 
 
 

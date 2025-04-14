@@ -22,7 +22,7 @@ export function ExperienciaUI() {
                 <MagicCard
                     borderWidth={3}
                     className="flex md:w-2/6 cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)]  shadow-2xl">
-                    <h3 className="text-8xl font-black">2024</h3>
+                    <h3 className="text-8xl font-black">2025</h3>
                     <h3 className="text-8xl font-black -mt-5">2022</h3>
                     <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
                 </MagicCard>

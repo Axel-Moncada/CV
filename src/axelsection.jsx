@@ -17,23 +17,23 @@ import Player1 from "./musicplayer";
 import VideoCard from "./mapvideo";
 import mapvideo from "./assets/map.webm"
 import axelphoto from "./assets/axel.png"
-import photo1 from "./assets/fotos/1.jpg"
-import photo2 from "./assets/fotos/2.jpg"
-import photo3 from "./assets/fotos/3.jpg"
-import photo4 from "./assets/fotos/4.jpg"
-import photo5 from "./assets/fotos/5.jpg"
-import photo6 from "./assets/fotos/6.jpg"
-import photo7 from "./assets/fotos/7.jpg"
+import photo1 from "./assets/fotos/Post1.png"
+import photo2 from "./assets/fotos/Post2.png"
+import photo3 from "./assets/fotos/Post3.png"
+import photo4 from "./assets/fotos/Post4.png"
+import photo5 from "./assets/fotos/Post5.png"
+import photo6 from "./assets/fotos/Post6.png"
+import photo7 from "./assets/fotos/Post7.png"
 
 
 import emoji from "./assets/memoji.png"
 import callred from "./assets/Phone-Call.png"
 import callgreen from "./assets/Phone-Call-green.png"
 
-import contacticon from "./assets/contact.svg"
+
 
 import DateTimeComponent from './datetimecomponent';
-import { motion } from 'framer-motion';
+
 
 function Axelsection() {
     return (
@@ -52,14 +52,16 @@ function Axelsection() {
                                 borderwidth={3}
                                 className="flex md:w-6/6 p-6 md:p-12 md:pt-11 cursor-pointer flex-col items-start justify-start overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)]  shadow-lg">
                                 <h2 className=" text-left text-5xl md:text-left md:text-5xl font-bold mb-4">Mas de mi </h2>
-                                <ul className="text-lg md:pl-1">
-                                    <li>✔️ Soy diseñador creativo de varios festivales de musica</li>
-                                    <li>✔️ Musico apasionado, toco Saxofon y Bajo</li>
-                                    <li>✔️ Me encanta crear crear y crear</li>
-                                    <li>✔️ En mis tiempos libres soy fotografo</li>
-                                    <li>✔️ Futuro trader del NASQ y SP500</li>
-                                    <li>✔️ Me gustan muchos los deportes</li>
+                                <ul className="text-lg md:pl-1 space-y-2">
+                                    <li className="transition-all duration-200 hover:translate-x-1 hover:text-orange-400">🎨 Soy diseñador creativo de varios festivales de música</li>
+                                    <li className="transition-all duration-200 hover:translate-x-1 hover:text-orange-400">🎷 Músico apasionado, toco saxofón y bajo</li>
+
+                                    <li className="transition-all duration-200 hover:translate-x-1 hover:text-orange-400">📸 En mis tiempos libres soy fotógrafo</li>
+                                    <li className="transition-all duration-200 hover:translate-x-1 hover:text-orange-400">💹 Futuro trader del NASDAQ y SP500</li>
+                                    <li className="transition-all duration-200 hover:translate-x-1 hover:text-orange-400">🤖 Entusiasta de la IA y su aplicación creativa</li>
+
                                 </ul>
+
                                 <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
                             </MagicCard>
 
@@ -75,7 +77,11 @@ function Axelsection() {
                         </Card>
                     </div>
 
-                    <div className=" col-span-2 col-span-2 px-6 md:px-0 mt-8 md:mt-0 mb-6 md:mb-0 ">
+                    <div className="col-span-2 px-6 md:px-0 mt-8 md:mt-0 mb-6 md:mb-0 relative">
+                        {/* Texto flotante sobre el carrusel */}
+                        <div className="absolute  transform  bg-black/60 text-white text-sm m-2 px-4 py-2 rounded shadow-lg z-10">
+                            Fotos generadas con IA ✨
+                        </div>
 
                         <Swiper
                             spaceBetween={0}
@@ -98,12 +104,9 @@ function Axelsection() {
                             <SwiperSlide><img src={photo5} alt="" /></SwiperSlide>
                             <SwiperSlide><img src={photo6} alt="" /></SwiperSlide>
                             <SwiperSlide><img src={photo7} alt="" /></SwiperSlide>
-
                         </Swiper>
-
-
-
                     </div>
+
                 </div>
                 <div className="grid grid-cols-1 p-4 md:grid-cols-8 md:gap-8 md:p-10 md:pt-1">
                     <div className=" col-span-2">
@@ -111,9 +114,12 @@ function Axelsection() {
                             "flex h-full md:h-[700px]  w-full flex-col gap-1 lg:h-[220px] lg:flex-row px-8 md:px-1 mb-8 md:mb-10"}>
                             <MagicCard
                                 borderwidth={3}
-                                className="flex md:w-6/6 p-10 md:p-12 md:pt-8 cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)]  shadow-lg">
-                                <h3 className="text-xl font-light ">English level</h3>
-                                <h2 className="text-9xl font-bold">A2</h2>
+                                className="relative flex md:w-6/6 p-10 md:p-12 md:pt-8 cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)] shadow-lg"
+                            >
+                                <h3 className="text-xl font-light text-white">English level</h3>
+                                <h2 className="text-9xl font-bold text-white">B1</h2>
+                                <p className="text-white text-lg italic">En progreso 🚀</p>
+
                                 <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
                             </MagicCard>
 
