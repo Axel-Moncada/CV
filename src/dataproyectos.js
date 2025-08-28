@@ -25,8 +25,14 @@ const dataproyectos = [
         id: 1,
         company: "Banco Unión - Western Union / 2022",
         title: "Giro Aguinaldo Millonario",
-        description: "En el año 2022, realice la campaña 'El Giro Aguinaldo Millonario', una iniciativa innovadora que fusionaba la acción de enviar dinero al exterior a través de Western Union con la emoción de participar en un juego interactivo similar a Flappy Bird. La mecánica era sencilla: cada persona que realizara un envío de dinero tenía la oportunidad de jugar al juego con cinco vidas. Aquel participante que lograra la puntuación más alta al final del periodo de la campaña, se hacía merecedor de un premio en efectivo superior a los 500 mil pesos colombianos. Fue una campaña exitosa se lograron mas de 8mil participantes y 200 ganadores generando un gran impacto a la empresa",
-        tecnologias: {
+        description: "En el año 2022 desarrollé la campaña 'El Giro Aguinaldo Millonario', una propuesta innovadora que combinaba el envío de dinero al exterior mediante Western Union con la emoción de un juego interactivo inspirado en Flappy Bird. La dinámica era simple: cada persona que realizaba un giro obtenía cinco vidas para jugar, y quien lograra la mayor puntuación al cierre de la campaña recibía un premio en efectivo superior a 500 mil pesos colombianos. La campaña fue altamente exitosa, con más de 8.000 participantes y 200 ganadores, generando un fuerte impacto en la marca y en la fidelización de los clientes.",
+  features: [
+    "🎮 Juego interactivo tipo Flappy Bird integrado a la campaña",
+    "💸 Participación mediante el envío de dinero con Western Union",
+    "🏆 Premio en efectivo superior a 500.000 pesos para el mejor puntaje",
+    "👥 Más de 8.000 participantes y 200 ganadores",
+    "📈 Incremento notable en el engagement y recordación de la marca"
+  ],tecnologias: {
             HTML,
             CSS,
             JS,
@@ -35,13 +41,21 @@ const dataproyectos = [
         },
 
         video: papanoel,
-        img: imgvideo1
+        img: imgvideo1,
+        url: "https://axelmoncada.com/portafolio/giroaguinaldo"
     },
     {
         id: 2,
         company: "Banco Union / 2023",
         title: "Tesoros escondidos - Calendario 2024",
-        description: "Trabajé con el equipo de diseño gráfico en el calendario 2024 de Banco Unión, con el objetivo de crear un calendario único y útil para los clientes. Surgió el proyecto 'Tesoros Ocultos de Colombia', un calendario que destaca 12 destinos turísticos poco conocidos en el país, cada uno con su historia, cómo llegar y consejos. Cada mes presenta un destino y tiene un QR que dirige a más información en una landing que desarrollé. El proyecto superó las expectativas al imprimir y distribuir más de 30 mil copias en todo el país, rompiendo con la idea de los calendarios tradicionales. ",
+       description: "En colaboración con el equipo de diseño de Banco Unión, creamos el calendario 2024 bajo el concepto 'Tesoros Ocultos de Colombia'. Cada mes destacó un destino turístico poco conocido con su historia, cómo llegar y consejos. Además, incorporamos códigos QR que dirigían a una landing page desarrollada para ampliar la información. El proyecto superó las expectativas con más de 30.000 copias impresas y distribuidas en todo el país, rompiendo con la idea de los calendarios tradicionales.",
+  features: [
+    "📅 Concepto creativo: 'Tesoros Ocultos de Colombia'",
+    "🌍 12 destinos turísticos poco conocidos con historia y consejos",
+    "🔗 Códigos QR enlazados a una landing con más información",
+    "🖨️ Más de 30.000 copias impresas y distribuidas a nivel nacional",
+    "🚀 Innovación frente a los calendarios tradicionales"
+  ],
         video: tesorosOcultos,
         img: imgvideo2,
         tecnologias: {
@@ -51,12 +65,19 @@ const dataproyectos = [
             ANGULAR,
             FIGMA
         },
+        url: "https://tesoros-colombia.netlify.app/"
     },
     {
         id: 3,
         company: "América de cali / 2021",
-        title: "Sistema de ingreso al Pascual guerrero",
-        description: "El equipo colombiano de futbol América de cali poseía un gran problema y es que todos los empleados podían entrar gratis al estadio, generando un sin fin de inconvenientes logisticos, para solucionar dicho inconveniente desarrolle un sistema de carga y visualización de los trabajadores actuales de la plantilla, con el fin de que gestión humana para cada partido subiera un Excel con toda la lista de empleados autorizados para ingresar y el día del partido las personas de seguridad ingresaban a la página y verificaban si podían acceder al estadio o no. ",
+        title: "Automatizador de Minuto a Minuto",
+        description: "El equipo de comunicaciones del América de Cali necesitaba agilizar el minuto a minuto durante los partidos. Construí una herramienta web que controla en tiempo real el cronómetro del primer y segundo tiempo y genera copys automáticos (con rivales, marcador, emojis y hashtags), listos para copiar y publicar en todas las redes mientras se ve la transmisión online.",
+  features: [
+    "⏱️ Control del cronómetro en primer y segundo tiempo",
+    "📝 Generación automática de copys con rivales y marcador",
+    "📲 Inclusión dinámica de emojis y hashtags",
+    "📤 Opción de copiar y publicar de inmediato en redes sociales"
+  ],
         video: americadecali,
         img: imgvideo3,
         tecnologias: {
@@ -66,12 +87,20 @@ const dataproyectos = [
             PHP,
             MYSQL
         },
+        url:"https://axelmoncada.com/portafolio/min-a-min"
     },
     {
         id: 4,
         company: "U. Iberoamericana / 2020",
         title: "HeyWallet",
-        description: "El proyecto final de mi certificación Full Stack en la Universidad Iberoamericana fue HeyWallet, una billetera digital desarrollada con Angular, Bootstrap, Node.js, MongoDB y JavaScript (MEAN). HeyWallet permitía a los usuarios gestionar gastos, ahorros e inversiones, con un proceso de activación de cuenta por correo electrónico para garantizar la seguridad. Este proyecto demostró mi capacidad para crear aplicaciones web funcionales y seguras para el control financiero personal. ",
+       description: "Proyecto final de mi certificación Full Stack en la Universidad Iberoamericana: HeyWallet, una billetera digital desarrollada con el stack MEAN (MongoDB, Express, Angular, Node.js). La aplicación permitía gestionar gastos, ahorros e inversiones, incorporando un proceso de activación de cuenta por correo electrónico para mayor seguridad. Este proyecto evidenció mi capacidad para crear aplicaciones web funcionales y seguras enfocadas en el control financiero personal.",
+  features: [
+    "💻 Desarrollado con el stack MEAN (MongoDB, Express, Angular, Node.js)",
+    "💰 Gestión de gastos, ahorros e inversiones",
+    "📧 Activación de cuenta mediante correo electrónico para mayor seguridad",
+    "🔒 Énfasis en la seguridad y usabilidad de la aplicación",
+    "🎓 Proyecto final de certificación Full Stack en la Universidad Iberoamericana"
+  ],
         video: heywallet,
         img: imgvideo4,
         tecnologias: {
@@ -82,6 +111,7 @@ const dataproyectos = [
             NODE_JS,
             MONGO_DB
         },
+        url: "https://axelmoncada.com/wp-content/uploads/2025/08/pcheywallet.mp4"
     },
 ];
 

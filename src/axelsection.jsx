@@ -116,9 +116,9 @@ function Axelsection() {
                                 borderwidth={3}
                                 className="relative flex md:w-6/6 p-10 md:p-12 md:pt-8 cursor-pointer flex-col items-center justify-center overflow-hidden bg-[radial-gradient(var(--mask-size)_circle_at_var(--mouse-x)_var(--mouse-y),#ffaa40_0,#9c40ff_50%,transparent_100%)] shadow-lg"
                             >
-                                <h3 className="text-xl font-light text-white">English level</h3>
-                                <h2 className="text-9xl font-bold text-white">B1</h2>
-                                <p className="text-white text-lg italic">En progreso 🚀</p>
+                                <h3 className="text-xl font-light  dark:text-white">English level</h3>
+                                <h2 className="text-9xl font-bold dark:text-white">B1+</h2>
+                                <p className="dark:text-white text-lg italic">En progreso 🚀</p>
 
                                 <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
                             </MagicCard>
